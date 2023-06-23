@@ -12,7 +12,8 @@ object PatternMatching extends App {
   println(order)
 
   //case class decomposition
-  case class Person (name: String, age: Int)
+  case class Person(name: String, age: Int)
+
   val bob = Person("Bob", 27)
 
   val greeting = bob match {
@@ -30,9 +31,9 @@ object PatternMatching extends App {
   println(intro)
 
   //deconstructing lists
-  val aList = List (1, 2, 4)
+  val aList = List(1, 2, 4)
   val aMatch = aList match {
-    case List (_, 2, _) => "List contains 2 in index 1"
+    case List(_, 2, _) => "List contains 2 in index 1"
     case _ => "Unknown List"
   }
   println(aMatch)
